@@ -1,0 +1,41 @@
+POST http://localhost:3000/guests HTTP/1.1
+content-type: application/json
+
+{"name":"new guests"}
+
+###
+
+GET http://localhost:3000/guests/id HTTP/1.1
+
+###
+DELETE http://localhost:3000/guests/id HTTP/1.1
+
+###
+
+PATCH http://localhost:3000/guests/id HTTP/1.1
+content-type: application/json
+
+{"name": "new name4"}
+
+###
+
+POST http://localhost:3000/hosts HTTP/1.1
+content-type: application/json
+
+{"name":"older driver", "location": "kuzguncuk"}
+
+###
+DELETE http://localhost:3000/hosts/id HTTP/1.1
+
+###
+POST http://localhost:3000/guests/id/bookings HTTP/1.1
+content-type: application/json
+
+{"hostId": "5ea724416e3b607ac41df63a", "origin": "Kabatas", "destination": "Pendik"}
+
+###
+
+PATCH http://localhost:3000/hosts/id HTTP/1.1
+content-type: application/json
+
+{"name": "a newer surname"}

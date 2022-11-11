@@ -1,0 +1,7 @@
+h2 Guest Detail
+ol
+    h3 #{guest.name}'s Booking(s)
+    p 
+        ol  
+            each booking in guest.bookings 
+                li #{booking.host.name}'s  #{booking.host.location} House

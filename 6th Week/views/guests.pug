@@ -1,0 +1,9 @@
+extends layout
+block content
+        h2 Guests
+
+        p There are #{guests.length} guest(s).
+        ol
+            each guest in guests 
+                li 
+                    a(href=`/guests/${guest.id}`) #{guest.name}
