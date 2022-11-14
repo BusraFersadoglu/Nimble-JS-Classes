@@ -1,0 +1,13 @@
+extends layout
+block content
+  h2 Bookings
+  p There are #{bookings.length} bookings.
+
+  ol
+    each booking in bookings
+      li
+        p Guest:
+          a(href=`/guests/${booking.guest.id}`) #{booking.guest.name}
+        p Host:
+          a(href=`/hosts/${booking.host.id}`) #{booking.host.name}
+        p Location: #{booking.location}

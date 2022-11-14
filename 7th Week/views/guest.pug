@@ -1,0 +1,9 @@
+h2 Guest Detail
+ol
+    h3 #{guest.name}'s Booking(s)
+    if guest.bookings.length
+        ol  
+            each booking in guest.bookings 
+                li #{booking.host.name}'s house in  #{booking.host.location} 
+    else 
+        p No bookings
