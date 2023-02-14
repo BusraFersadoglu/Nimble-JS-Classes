@@ -1,1 +1,3 @@
 # Nimble-JS-Classes
+
+I am currently working on a Booking App project as part of the Armağan Amcaların Nimble training at Lonca Works. The project showcases my expertise in the usage of NodeJS and MongoDB for the backend, and NextJS for the frontend. This project is a great opportunity for me to demonstrate my skills in full-stack development and provide a functional solution for booking management. The technologies used in the project are cutting-edge and well suited for building scalable and efficient applications. With my determination and attention to detail, I am confident that I will deliver a high-quality end product that meets the requirements and exceeds expectations.
