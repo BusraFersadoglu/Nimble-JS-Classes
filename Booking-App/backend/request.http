@@ -1,0 +1,47 @@
+//Users
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{"name":"user6"}
+
+###
+
+GET http://localhost:3000/users/id HTTP/1.1
+
+###
+DELETE http://localhost:3000/users/id HTTP/1.1
+
+###
+
+PATCH http://localhost:3000/users/id HTTP/1.1
+content-type: application/json
+
+{"name": "new name4"}
+
+
+###
+
+//Hosts
+
+POST http://localhost:3001/hosts HTTP/1.1
+content-type: application/json
+
+{"name":"Ahmet", "country":"Türkiye", "city": "Afyon", "overnightStayPrice": 300, "numberOfGuests": 3,"numberOfBedroom": 2, "numberOfBed": 2, "numberOfBath": 1}
+
+###
+DELETE http://localhost:3000/hosts/id HTTP/1.1
+
+###
+
+
+PATCH http://localhost:3000/hosts/id HTTP/1.1
+content-type: application/json
+
+{"name": "a newer surname"}
+
+###
+
+POST http://localhost:3000/users/637220d5811b8f00cf214c62/bookings HTTP/1.1
+content-type: application/json
+
+{"hostId": "637220f6811b8f00cf214c64", "location": "Ankara"}

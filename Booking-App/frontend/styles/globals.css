@@ -1,0 +1,76 @@
+:root {
+  --main: #eef4ed;
+  --header: #8da9c4;
+  --font-color: #0b2545;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--main);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+nav.navbar {
+  background-color: var(--header);
+  margin-bottom: 1rem;
+}
+nav.navbar h1 {
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 200;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+.hosts-card {
+  background-color: white;
+  height: 25rem;
+  width: 22rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  border-radius: 0.2rem;
+}
+.card-image {
+  border-radius: 1rem;
+}

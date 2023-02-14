@@ -1,0 +1,9 @@
+extends layout
+block content
+        h2 Hosts
+
+        p There are #{hosts.length} user(s).
+        ol
+            each host in hosts 
+                li 
+                    a(href=`/hosts/${host.id}`) #{host.name}
